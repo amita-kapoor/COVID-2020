@@ -24,11 +24,13 @@ The graph above makes it clear China had maximum cases, next in line is Italy fo
 We data scientists love 'normalization', it helps us to see things in different scales together. Here also, each country has different population so instead of absolute numbers of confirmed cases, it makes more sense to see the confirmed cases as percentage of each countries population. The graph is below.
 
 
-![total confirmed](images/total_per_population.png)
-<p align="center">
 
-**Total number of confirmed cases expressed as percentage of each countries population**
-</p>
+||
+|:--:| 
+| ![](images/total_per_population.png)|
+|  **Total number of confirmed cases expressed as percentage of each countries population**|
+
+
 
 
 We can see that in this case the total number of cases are less that 0.06% of entire population of a country. That is a very small number. Indeed many whatsapp and facebook posts going around claiming Corona to be nothing more than a media hype. Trying to convince that more people die of flu and hunger - than Corona will kill. 
