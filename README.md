@@ -17,7 +17,10 @@ We data scientists love 'normalization', it helps us to see things in different 
 
 
 ![total confirmed](images/total_per_population.png)
-->**Total number of confirmed cases expressed as percentage of each countries population**<-
+<p align="center">
+
+**Total number of confirmed cases expressed as percentage of each countries population**
+</p>
 
 
 We can see that in this case the total number of cases are less that 0.06% of entire population of a country. That is a very small number. Indeed many whatsapp and facebook posts going around claiming Corona to be nothing more than a media hype. Trying to convince that more people die of flu and hunger - than Corona will kill. 
