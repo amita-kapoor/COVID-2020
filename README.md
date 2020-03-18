@@ -8,6 +8,7 @@ The number of confirmed cases as of today 18th March 2020 have crossed 2 Lakhs i
 
 <p align="center">
   <img width="460" height="300" src="images/total_confirmed.png">
+  
   Total number of confirmed cases in every country
 </p>
 
