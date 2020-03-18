@@ -1,5 +1,4 @@
 # COVID-2020
-This repository is an attempt to analyze and predict Corona Virus cases world wide.
 
 I am no virologist or an expert in Epidemology-- but a simple AI practioner. And so without going into any further details will directly divulge into the data and the insights it offers.
 
