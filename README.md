@@ -7,13 +7,19 @@ The number of confirmed cases as of today 18th March 2020 have crossed 2 Lakhs i
 
 
 <p align="center">
-  <img width="460" height="300" src="images/total_confirmed.png">
+  <img width="560" height="400" src="images/total_confirmed.png">
   
   Total number of confirmed cases in every country
 </p>
 
-![total confirmed](images/total_confirmed.png)
 
+
+It's hacky but if you're using GFM or some other MD syntax which supports building tables with pipes you can use the column alignment features:
+
+|| <!-- empty table header -->
+|:--:| <!-- table header/body separator with center formatting -->
+| ![](images/total_confirmed.png)| <!-- cell gets column's alignment -->
+|  **Total number of confirmed cases in every country**|
 
 
 The graph above makes it clear China had maximum cases, next in line is Italy followed closely by Iran. The picture is indeed appears grim.
