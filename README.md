@@ -6,9 +6,14 @@ I am no virologist or an expert in Epidemology-- but a simple AI practioner. And
 The number of confirmed cases as of today 18th March 2020 have crossed 2 Lakhs i,e: 2,00,000. The image below shows these cases and how they are distributed along the world.
 
 
+<p align="center">
+  <img width="460" height="300" src="images/total_confirmed.png">
+  Total number of confirmed cases in every country
+</p>
+
 ![total confirmed](images/total_confirmed.png)
 
-->**Total number of confirmed cases in every country**<-
+
 
 The graph above makes it clear China had maximum cases, next in line is Italy followed closely by Iran. The picture is indeed appears grim.
 
