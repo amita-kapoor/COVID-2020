@@ -115,7 +115,7 @@ To ensure that you have understood what I am saying, let us take the case of Del
 ||| |
 |:--:| :--:|:--:|
 | ![](images/p20m0p3c.png)|![](images/p20m0p8c.png)|![](images/p20m0p1c.png)|
-|  **Delhi Suspected, Infected and Recovered as per SIR model with a contact rate same as China**|**Delhi Suspected, Infected and Recovered as per SIR model with a contact rate greater than**|**Delhi Suspected, Infected and Recovered as per SIR model with a contact rate less than China**|
+|  **Delhi:SIR model with a contact rate same as China**|**Contact rate greater than China**|**Contact rate less than China**|
 
 If we follow even the same quarentine level as China, then at the peak stage of infection we will require 1.5 million hospital beds. 
 
@@ -135,7 +135,7 @@ And lastly wpuld like to add these two cartoons from internet, I do not know the
 
 ||| 
 |:--:| :--:|
-| ![](images/cartton1.jpg)|![](images/cartton2.jpg|
+| ![](images/cartton1.jpg)|![](images/cartton2.jpg)|
 |  **This pandemic might change more than we ever thought**|**May be Corona is the vaccine and we the virus :smiley:**|
 
 # Additional Resources:
