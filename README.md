@@ -1,6 +1,6 @@
 # COVID-2020
 
-I am no virologist or an expert in Epidemology-- but a simple AI practioner. And so without going into any further details will directly divulge into the data and the insights it offers.
+I am no virologist or an expert in Epidemiology-- but a simple AI practitioner. And so without going into any further details will directly divulge into the data and the insights it offers.
 
 The number of confirmed cases as of today 18th March 2020 have crossed 2 Lakhs i,e: 2,00,000. The image below shows these cases and how they are distributed along the world.
 
@@ -9,13 +9,6 @@ The number of confirmed cases as of today 18th March 2020 have crossed 2 Lakhs i
 |:--:| 
 | ![](images/total_confirmed.png)|
 |  **Total number of confirmed cases in every country**|
-
-
-
-It's hacky but if you're using GFM or some other MD syntax which supports building tables with pipes you can use the column alignment features:
-
-
-
 
 The graph above makes it clear China had maximum cases, next in line is Italy followed closely by Iran. The picture is indeed appears grim.
 
@@ -32,7 +25,7 @@ We data scientists love 'normalization', it helps us to see things in different 
 
 
 
-We can see that in this case the total number of cases are less that 0.06% of entire population of a country. The worst effected now being Iceland! yep you read correct. That is a very small number. Indeed many whatsapp and facebook posts going around claiming Corona to be nothing more than a media hype. Trying to convince that more people die of flu and hunger - than Corona will kill. 
+We can see that in this case the total number of cases are less that 0.06% of entire population of a country. The worst effected now being Iceland! yep you read correct. That is a very small number. Indeed many whatsapp and Facebook posts going around claiming Corona to be nothing more than a media hype. Trying to convince that more people die of flu and hunger - than Corona will kill. 
 
 
 ## Do not conclude so hastily
@@ -40,14 +33,14 @@ We can see that in this case the total number of cases are less that 0.06% of en
 From just two graphs let us not make the mistake of concluding. The result maybe reassuring, but is coming from half knowledge, from ignorance and as [Herman Melville](https://g.co/kgs/B8tFps) said 
 >> **“Ignorance is the parent of fear.”**
 
-Let us deshelve the ignorance and the resultant fear. That is the rational approach. There are many mathematical models to study infectious diseases. The most used and quite simple is the [SIR](https://web.stanford.edu/~jhj1/teachingdocs/Jones-on-R0.pdf) model. The name arises from the fact that it divides the population into three compartments: 
+Let us deshelve the ignorance and the resultant fear. And try data based rational approach. There are many mathematical models to study infectious diseases. The most used and quite simple is the [SIR](https://web.stanford.edu/~jhj1/teachingdocs/Jones-on-R0.pdf) model. The name arises from the fact that it divides the population into three compartments: 
 
 * **S** Susceptible -- *the ones which can get infection.*  
 * **I** Infected -- *the ones infected by the disease and actual carriers.*
 * **R** Recovered -- *the individuals who were infected earlier and now fully recovered (and hopefully have developed immunity to the infection).*
 
 
-Population shifts from Susceptible to Infected to Recovered. I will not bore you with the maths behind it, those interested can refer to the link above and code [here](https://github.com/amita-kapoor/COVID-2020/blob/master/Prediction_Covid_19_WorldWide.ipynb). Just remember the three compartments defined above, and three more important parameters defined below:
+Population shifts from Susceptible to Infected to Recovered. I will not bore you with the math behind it, those interested can refer to the link above and code [here](https://github.com/amita-kapoor/COVID-2020/blob/master/Prediction_Covid_19_WorldWide.ipynb). Just remember the three compartments defined above, and three more important parameters defined below:
 
 1. **Contact Rate** - It is a measure of how many persons one infected person can infect-depends on social circle- **more social distancing - less is this number**.
 2. **Mean Recovery Rate** - It is the reciprocal of the number of days a person stays contagious. 
@@ -58,7 +51,7 @@ When we start the whole population is susceptible, and when we finish the whole 
 ||
 |:--:| 
 | ![](images/sample_sir.png)|
-|  **Variation of Suscepted, Infected and Recovered with time according to the SIR model**|
+|  **Variation of Suspected, Infected and Recovered with time according to the SIR model**|
 
 >> Remember the model is simple and is not taking death into account. But in real life deaths happen. As we can see from the China data.
 
@@ -79,16 +72,16 @@ I see you are calculating only 60,000 from 11 million!! You are forgetting from 
  
 Since the incubation period of Corona Virus can be from 4-28 days [[Source](https://www.reuters.com/article/us-china-health-incubation/coronavirus-incubation-could-be-as-long-as-27-days-chinese-provincial-government-says-idUSKCN20G06W)], it is possible that there were many asymptomatic carriers in whom symptoms appeared later. 
 
-Now let us try and run SIR model in China data, with a initial population of 11 million 
+Now let us try and run SIR model in China data, with a initial population of 11 million, that is considering only Wuhan 
 
 
 
 ||
 |:--:| 
 | ![](images/china_sir_model.png)|
-|  **Suscepted, Infected and Recovered in Wuhan as per SIR model**|
+|  **Suspected, Infected and Recovered in Wuhan as per SIR model**|
 
-Well starting from December 2019, it peaked in mid-Febryary (~ 60 days) and now is on decline. The same trend is visible in the modelled graph above.
+Well starting from December 2019, it peaked in mid-February (~ 60 days) and now is on decline. The same trend is visible in the modelled graph above.
 
 So we did hit the Bulls eye with SIR model. Now what, remember the three numbers:
 1. Contact Rate, 
@@ -104,10 +97,10 @@ Assuming  a country with population of 1000 million becomes susceptible, then if
 ||
 |:--:| 
 | ![](images/p1000m.png)|
-|  **A hypothetical country with 1000 million population, enforcing same level of Quarentine as China: SIR model**|
+|  **A hypothetical country with 1000 million population, enforcing same level of Quarantine as China: SIR model**|
 
 
->>> An important point overlloked, when talking in numbers is that at peak it will require roughly 75 million hospital beds (assuming 15% of tatl infected requiring hospitalization)-- and may be 10-20% of these will require ICU beds. An in absence of them **PEOPLE WILL DIE** irrespective of age!! Yes, irrespective of the age- because when breathlessness strikes- hospitals are needed.
+>>> An important point overlooked, when talking in numbers is that at peak it will require roughly 75 million hospital beds (assuming 15% of total infected requiring hospitalization)-- and may be 10-20% of these will require ICU beds. An in absence of them **PEOPLE WILL DIE** irrespective of age!! Yes, irrespective of the age- because when breathlessness strikes- hospitals are needed.
 
 To ensure that you have understood what I am saying, let us take the case of Delhi, the capital of India. It has 20 million population. At present the number of cases in Delhi are restricted to 10 cases, there are local transmissions but no cluster transmissions yet reported. The population of Delhi is 20 million and it is host to 172 Hospitals, many of international repute. Assuming each one of the hospitals have a capacity of 1000 (I am indeed exaggerating :smiley: ), thus we have 1,72,000 beds capacity. 
 
@@ -116,20 +109,20 @@ To ensure that you have understood what I am saying, let us take the case of Del
 | ![](images/p20m0p3c.png)|![](images/p20m0p8c.png)|![](images/p20m0p1c.png)|
 |  **Delhi:SIR model with a contact rate same as China**|**Contact rate greater than China**|**Contact rate less than China**|
 
-If we follow even the same quarentine level as China, then at the peak stage of infection we will require 1.5 million hospital beds. 
+If we follow even the same quarantine level as China, then at the peak stage of infection we will require 1.5 million hospital beds. 
 
 ## Social Distancing - the solution, But!
 
 If we can decrease contact rate by increasing self-imposed quarantine to just one third of China, then as you saw in the above figures, the number of patients will be manageable-- and thus few fatalities. Hence, as many experts are suggesting social-distancing is the key. However, for how long- this is a delicate issue.
 
-For Delhi, it streches to slightly more than a year. For other countries depending upon the population, the time period may increase or decrease.
+For Delhi, it stretches to slightly more than a year. For other countries depending upon the population, the time period may increase or decrease.
 
-The life cannot and should not stop, thus, in my opinion- only social distancing will not be enough- it can create other unforseen problems. 
+The life cannot and should not stop, thus, in my opinion- only social distancing will not be enough- it can create other unforeseen problems. 
 
->>> We will have to rethink how we work, how we commute and how we take care of the people who do not have the luxury to work from home - the healthcare professionals, the plumber, the maids, the safai karamcharis, the security gaurds... 
+>>> We will have to rethink how we work, how we commute and how we take care of the people who do not have the luxury to work from home - the healthcare professionals, the plumber, the maids, the safai karamcharis, the security guards... 
 
 
-And lastly wpuld like to add these two cartoons from internet, I do not know the source but who ever made them--they are right on spot.
+And lastly would like to add these two cartoons from internet, I do not know the source but who ever made them--they are right on spot.
 
 
 ||| 
